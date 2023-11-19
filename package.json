@@ -1,0 +1,23 @@
+{
+  "name": "my-notes-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon /Users/amanbharadwaj/Desktop/my-notes-app/backend/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amanharness/my-notes-app.git"
+  },
+  "author": "Aman",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/amanharness/my-notes-app/issues"
+  },
+  "homepage": "https://github.com/amanharness/my-notes-app#readme",
+  "dependencies": {
+    "mongoose": "^8.0.1"
+  }
+}
