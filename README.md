@@ -22,9 +22,10 @@ npm start
 * Mongoose (version 8.0.1)
 
 # Features
-User Authentication: Users can create accounts and log in to access their personalized notes.
 
-Note Creation and Editing: Users can create new notes, view existing ones.
+* User Authentication: Users can create accounts and log in to access their personalized notes.
+  
+* Users can create new notes, view existing ones.
 
 # Usage
 
