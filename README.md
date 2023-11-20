@@ -46,4 +46,5 @@ Customize the application settings in the index.js file.
 
 Author
 Aman - GitHub
+
 Thank you for using My Notes App!
