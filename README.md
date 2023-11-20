@@ -1,9 +1,9 @@
 # My Notes App
 
-Overview
+## Overview
 My Notes App is a simple note-taking web application built using JavaScript (Node.js) and MongoDB. This application allows users to create, edit, and organize their notes seamlessly.
 
-# Installation 
+## Installation 
 1.Clone the repository:
 git clone https://github.com/amanharness/my-notes-app.git
 
@@ -16,18 +16,18 @@ npm install
 4.Start the application:
 npm start
 
-# Technologies Used
+## Technologies Used
 * Node.js
 * MongoDB
 * Mongoose (version 8.0.1)
 
-# Features
+## Features
 
 * User Authentication: Users can create accounts and log in to access their personalized notes.
   
 * Users can create new notes, view existing ones.
 
-# Usage
+## Usage
 
 Visit https://github.com/amanharness/my-notes-app#readme for the project's homepage.
 
@@ -39,15 +39,15 @@ Create an account or log in if you already have one.
 
 Start creating your notes effortlessly.
 
-# Configuration
+## Configuration
 The application is configured to use MongoDB as the database, with the mongoose library.
 
 Customize the application settings in the index.js file.
 
-# Contributions
+## Contributions
 Contributions are welcome! Please follow the contribution guidelines to contribute to this project.
 
-# Issues
+## Issues
 If you encounter any issues or have suggestions, please report them on the GitHub issues page.
 
 Author
