@@ -44,12 +44,6 @@ The application is configured to use MongoDB as the database, with the mongoose 
 
 Customize the application settings in the index.js file.
 
-## Contributions
-Contributions are welcome! Please follow the contribution guidelines to contribute to this project.
-
-## Issues
-If you encounter any issues or have suggestions, please report them on the GitHub issues page.
-
 Author
 Aman - GitHub
 Thank you for using My Notes App!
