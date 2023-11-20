@@ -48,3 +48,10 @@ Author
 Aman - GitHub
 
 Thank you for using My Notes App!
+
+Home Page
+<img width="1792" alt="Screenshot 2023-11-21 at 1 04 17 AM" src="https://github.com/amanharness/my-notes-app/assets/122996901/5d59c522-1e6c-44eb-b8ab-63ba093c139c">
+
+
+
+
