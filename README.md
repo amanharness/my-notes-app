@@ -13,22 +13,19 @@ npm i mongoose
 3.Install express 
 npm express
 
-4.Install JWT
-npm i jsonwebtoken
-
-5.Install nodemon
+4.Install nodemon
 npm i -D nodemon
 
-2.Clone the repository:
+5.Clone the repository:
 git clone https://github.com/amanharness/my-notes-app.git
 
-3.Navigate to the project directory:
+6.Navigate to the project directory:
 cd my-notes-app
 
-4.Install dependencies:
+7.Install dependencies:
 npm install
 
-5.Start the application:
+8.Start the application:
 npm start
 
 ## Technologies Used
