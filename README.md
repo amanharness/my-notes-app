@@ -1,7 +1,7 @@
 # My Notes App
 
 ## Overview
-My Notes App is a simple note-taking web application built using JavaScript (Node.js) and MongoDB. This application allows users to create, view, and organize their notes seamlessly.
+My Notes App is a simple note-taking web application built using JavaScript (Node.js) and MongoDB. This application allows users to create, view and delete their notes seamlessly.
 
 ## Installation 
 1.Clone the repository:

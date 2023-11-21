@@ -97,7 +97,15 @@ app.delete("/deletenote/:id", async (req, res) => {
 });
 
 app.get('/about', (req, res) => {
-  res.sendFile(path.join(__dirname, "pages", "about.html"));
+  const filePath = path.join(__dirname, 'about.html');
+  console.log('Attempting to send file from path:', filePath);
+  
+  res.sendFile(filePath, (err) => {
+    if (err) {
+      console.error('Error sending file:', err);
+      res.status(500).send('Internal Server Error');
+    }
+  });
 });
 
 app.listen(port, () => {
