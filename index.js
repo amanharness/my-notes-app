@@ -68,6 +68,26 @@ app.post("/getnotes", async (req, res) => {
   res.status(200).json({ success: true, notes });
 
 });
+// Add a new route for deleting a note
+app.delete("/deletenote/:id", async (req, res) => {
+  const { userToken } = req.body;
+  const noteId = req.params.id;
+
+  try {
+    // Find the note by ID and delete it
+    const deletedNote = await Note.findByIdAndDelete(noteId);
+
+    if (!deletedNote) {
+      return res.status(404).json({ success: false, message: "Note not found" });
+    }
+
+    res.status(200).json({ success: true, message: "Note deleted successfully", deletedNote });
+  } catch (error) {
+    console.error('Error deleting note:', error);
+    res.status(500).json({ success: false, error: 'Internal Server Error' });
+  }
+});
+
 app.get('/about',(req,res)=>{
   const { userToken } = req.body;
   res.sendFile("/Users/amanbharadwaj/Desktop/my-notes-app/about.html", {

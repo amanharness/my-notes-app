@@ -66,6 +66,33 @@
       let rdata = await response.json()
       return rdata
     }
+    
+    // Function to delete a note
+    const deleteNote = async (noteId) => {
+    const user = JSON.parse(localStorage.getItem('user'));
+
+    if (!user || !user.email) {
+      alert("Please login first");
+      return;
+    }
+
+    const response = await fetch(`/deletenote/${noteId}`, {
+      method: "DELETE",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({ userToken: user.userToken }),
+    });
+
+    const responseData = await response.json();
+
+    if (responseData.success) {
+      alert("Note deleted successfully");
+      fetchNotes(); // Refresh the notes after deletion
+    } else {
+      alert("Error deleting note");
+    }
+    };
     //Fetch all the notes 
     const fetchNotes = () => {
       let noteContainer = document.querySelector(".mynotes")
@@ -83,7 +110,7 @@
               <h5 class="card-title">${element.title}</h5>
               <h6 class="card-subtitle mb-2 text-body-secondary">Note content</h6>
               <p class="card-text">${element.content}</p>
-              <a href="#" class="card-link">Delete</a>
+              <a href="#" class="card-link" onclick="deleteNote('${element._id}')">Delete</a>
             </div>
           </div>`
             noteContainer.innerHTML += note
