@@ -68,10 +68,6 @@ app.post("/getnotes", async (req, res) => {
   res.status(200).json({ success: true, notes });
 
 });
-app.post("/deletenote", (req, res) => {
-  const { userToken } = req.body;
-});
-
 app.get('/about',(req,res)=>{
   const { userToken } = req.body;
   res.sendFile("/Users/amanbharadwaj/Desktop/my-notes-app/about.html", {

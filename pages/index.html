@@ -34,7 +34,7 @@
 
 <body>
   <div class="container">
-    <h1 class="my-3">Add your Notes</h1>
+    <h1 class="my-3">Add Notes</h1>
     <div>
       <div class="mb-3">
         <label for="title" class="form-label">Title</label>
@@ -46,7 +46,7 @@
       </div>
       <button id="submit" type="submit" class="btn btn-primary">Submit</button>
     </div>
-    <h1 class="my-4">Notes</h1>
+    <h1 class="my-4">Notes Collection</h1>
     <div class="mynotes row">
     </div>
   </div>
@@ -54,13 +54,12 @@
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
     crossorigin="anonymous"></script>
   <script>
-    // Example POST method implementation:
+    //POST method implementation:
     async function postData(url = "", data = {}) {
       const response = await fetch(url, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
-          // 'Content-Type': 'application/x-www-form-urlencoded',
         },
         body: JSON.stringify(data),
       });
@@ -98,7 +97,6 @@
     fetchNotes()
     //Add a click listener 
     let submit = document.getElementById("submit")
-
     submit.addEventListener("click", async () => {
       let title = document.getElementById("title").value
       let content = document.getElementById("content").value
@@ -111,7 +109,6 @@
         document.getElementById("title").value = ""
         document.getElementById("content").value = ""
         fetchNotes()
-
       }
     })
 
